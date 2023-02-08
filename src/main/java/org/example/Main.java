@@ -27,17 +27,19 @@ public class Main {
 
         Iterator<String> i=hs.iterator();
         Iterator<String> j= ts.iterator();
-
+        String ii;
         log.info("Elements in Hash set is");
         while(i.hasNext())
         {
-            log.info(i.next());
+            ii=i.next();
+            log.info(ii);
         }
         log.info("Elements in Tree set is");
 
         while(j.hasNext())
         {
-            log.info( j.next());
+            ii=j.next();
+            log.info(ii);
         }
         log.info("Elements in Hashmap");
         for(Map.Entry m : hm.entrySet()){
@@ -54,15 +56,18 @@ public class Main {
         Iterator<String> x=hs.iterator();
         Iterator<String> y= ts.iterator();
         log.info("Elements in Hash set is");
+
         while(x.hasNext())
         {
-            log.info(i.next());
+            ii=x.next();
+            log.info(ii);
         }
         log.info("Elements in Tree set is");
 
         while(y.hasNext())
         {
-            log.info(j.next());
+            ii=y.next();
+            log.info(ii);
         }
 
     }
