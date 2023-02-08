@@ -51,16 +51,16 @@ public class Main {
         String rem=sc.next();
         hs.remove(rem);
         ts.remove(rem);
-        i=hs.iterator();
-        j= ts.iterator();
+        Iterator<String> x=hs.iterator();
+        Iterator<String> y= ts.iterator();
         log.info("Elements in Hash set is");
-        while(i.hasNext())
+        while(x.hasNext())
         {
             log.info(i.next());
         }
         log.info("Elements in Tree set is");
 
-        while(j.hasNext())
+        while(y.hasNext())
         {
             log.info(j.next());
         }
