@@ -10,8 +10,8 @@ public class Main {
         Logger log= Logger.getLogger("com.api.jar");
         log.info("Enter the size");
         size=sc.nextInt();
-        HashSet<String> hs=new HashSet<String >();
-        TreeSet<String> ts=new TreeSet<String>();
+        HashSet<String> hs=new HashSet< >();
+        TreeSet<String> ts=new TreeSet<>();
         HashMap<Integer,String>hm=new HashMap<>();
         TreeMap<Integer,String>tm=new TreeMap<>();
         log.info("Enter the Elements");
@@ -23,8 +23,6 @@ public class Main {
             hm.put(j+1,name);
             tm.put(j+1,name);
         }
-
-
         Iterator<String> i=hs.iterator();
         Iterator<String> j= ts.iterator();
         String ii;
@@ -35,18 +33,17 @@ public class Main {
             log.info(ii);
         }
         log.info("Elements in Tree set is");
-
         while(j.hasNext())
         {
             ii=j.next();
             log.info(ii);
         }
         log.info("Elements in Hashmap");
-        for(Map.Entry m : hm.entrySet()){
+        for(Map.Entry<Integer,String> m : hm.entrySet()){
             log.info(m.getKey()+" "+m.getValue());
         }
         log.info("Elements in Treemap");
-        for(Map.Entry m : tm.entrySet()){
+        for(Map.Entry<Integer,String> m : tm.entrySet()){
             log.info(m.getKey()+" "+m.getValue());
         }
         log.info("Enter the element to get removed");
