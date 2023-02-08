@@ -23,14 +23,7 @@ public class Main {
             hm.put(j+1,name);
             tm.put(j+1,name);
         }
-//        log.info("Hash Set=");
-//        log.info((Supplier<String>) hs);
-//        log.info("Tree Set=");
-//        log.info((Supplier<String>) ts);
-//        log.info("Hash Map=");
-//        log.info((Supplier<String>) hm);
-//        log.info("Tree Map=");
-//        log.info((Supplier<String>) tm);
+
 
         Iterator<String> i=hs.iterator();
         Iterator<String> j= ts.iterator();
@@ -38,7 +31,7 @@ public class Main {
         log.info("Elements in Hash set is");
         while(i.hasNext())
         {
-            log.info( i.next());
+            log.info(i.next());
         }
         log.info("Elements in Tree set is");
 
@@ -63,13 +56,13 @@ public class Main {
         log.info("Elements in Hash set is");
         while(i.hasNext())
         {
-            log.info((String) i.next());
+            log.info(i.next());
         }
         log.info("Elements in Tree set is");
 
         while(j.hasNext())
         {
-            log.info((String) j.next());
+            log.info(j.next());
         }
 
     }
