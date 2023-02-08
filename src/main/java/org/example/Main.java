@@ -1,6 +1,5 @@
 package org.example;
 import java.util.*;
-import java.util.function.Supplier;
 import java.util.logging.Logger;
 
 public class Main {
@@ -33,18 +32,19 @@ public class Main {
 //        log.info("Tree Map=");
 //        log.info((Supplier<String>) tm);
 
-        Iterator i=hs.iterator();
-        Iterator j= ts.iterator();
+        Iterator<String> i=hs.iterator();
+        Iterator<String> j= ts.iterator();
+
         log.info("Elements in Hash set is");
         while(i.hasNext())
         {
-            log.info((String) i.next());
+            log.info( i.next());
         }
         log.info("Elements in Tree set is");
 
         while(j.hasNext())
         {
-            log.info((String) j.next());
+            log.info( j.next());
         }
         log.info("Elements in Hashmap");
         for(Map.Entry m : hm.entrySet()){
@@ -71,12 +71,6 @@ public class Main {
         {
             log.info((String) j.next());
         }
-//        log.info("After removing the elements");
-//        log.info("Hash Set=");
-//        log.info((Supplier<String>) hs);
-//        log.info("Tree Set=");
-//        log.info((Supplier<String>) ts);
-
 
     }
 }
